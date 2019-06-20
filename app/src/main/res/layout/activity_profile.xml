@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bg"
+    tools:context=".ProfileActivity">
+
+
+    <Button
+        android:id="@+id/btn_profile_sendChatRequest"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/decline_btn_bg"
+        android:text="Remove contact"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        android:padding="5dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_ProfileImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="5dp" />
+
+    <RatingBar
+        android:id="@+id/DoctorProfile_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_ProfileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:theme="@style/RatingBar"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_profile_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DoctorProfile_ratingBar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:hint="user name ..."
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_profile_status2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_profile_userName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/et_bg"
+        android:gravity="center"
+        android:hint="Hi I am available ..."
+        android:minHeight="50dp"
+        android:singleLine="true"
+        android:textColor="#444"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_profile_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_profile_sendChatRequest"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/et_bg2"
+        android:gravity="center"
+        android:hint="Tap to view the medical history"
+        android:minHeight="50dp"
+        android:singleLine="true"
+        android:textColor="#444"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

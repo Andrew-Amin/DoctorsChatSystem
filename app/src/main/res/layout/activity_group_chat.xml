@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg2"
+    tools:context=".GroupChatActivity">
+
+    <include
+        android:id="@+id/groupChat_bar_layout"
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:id="@+id/scroll_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_below="@+id/groupChat_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/groupChat_text_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="50dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/send_msg_btn"
+            android:background="@drawable/et_bg">
+
+            <EditText
+                android:id="@+id/input_group_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/groupChat_input_file"
+                android:background="@drawable/et_bg"
+                android:hint="Type a message ..."
+                android:maxHeight="150dp"
+                android:minHeight="45dp"
+                android:textColorHighlight="#18F0FF"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/groupChat_input_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_add_a_photo_dp"
+                android:contentDescription="attach picture" />
+
+            <ImageButton
+                android:id="@+id/groupChat_input_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/groupChat_input_image"
+                android:background="@drawable/ic_attach_file_dp"
+                android:contentDescription="attach file" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/send_msg_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn2_bg"
+            android:src="@drawable/ic_send_msg_dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:text="Doctors version ..."
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/DoctorRegister_Medical_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_UserName_id"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_action_password"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint=" Medical ID ..."
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorHint="#8fff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_UserName_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_Password_id"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_action_user"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint=" Email ..."
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorHint="#8fff"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#402F4F"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/register_SIGNIN_ID_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/register_SIGNIN_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SIGN UP"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/register_Password_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_Password_id2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint=" Password ..."
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#8fff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_Password_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/matched_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint=" Confirm password ..."
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#8fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/matched_password"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text="NOT Matched"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:textStyle="italic" />
+
+
+
+
+
+</RelativeLayout>

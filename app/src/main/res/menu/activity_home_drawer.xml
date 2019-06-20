@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/edit"
+            android:icon="@drawable/ic_account_circle_dp"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Specialities">
+        <menu>
+            <item
+                android:id="@+id/Internal"
+                android:title="Internal Medicine" />
+            <item
+                android:id="@+id/Dermatology"
+                android:title="Dermatology" />
+            <item
+                android:id="@+id/Family"
+                android:title="Family Medicine" />
+            <item
+                android:id="@+id/Obstetrics"
+                android:title="Obstetrics and Gynecology" />
+            <item
+                android:id="@+id/Ophthalmology"
+                android:title="Ophthalmology" />
+            <item
+                android:id="@+id/Physical"
+                android:title="Physical Medicine" />
+            <item
+                android:id="@+id/Allergy"
+                android:title="Allergy and Immunology" />
+        </menu>
+    </item>
+
+</menu>

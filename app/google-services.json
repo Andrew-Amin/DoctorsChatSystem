@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1067992705196",
+    "firebase_url": "https://chatsystem-f514a.firebaseio.com",
+    "project_id": "chatsystem-f514a",
+    "storage_bucket": "chatsystem-f514a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067992705196:android:fa12f8d7ea1955be",
+        "android_client_info": {
+          "package_name": "com.example.andrew.chatsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067992705196-35d8svehkhf2lq3mm7h7bn430l96hj2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andrew.chatsystem",
+            "certificate_hash": "c794c7888ff54994efdde53e9ff0d00bf5ccae6c"
+          }
+        },
+        {
+          "client_id": "1067992705196-5b10lc71d8althu9ueg7qjc0e433uok3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALNDervDlVSeaUZIzYyMlLHl8k05zatVw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067992705196-5b10lc71d8althu9ueg7qjc0e433uok3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067992705196:android:2bb88dba27a5ce3e",
+        "android_client_info": {
+          "package_name": "com.example.andrew.doctorschatsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067992705196-0sf8potu5foc9ileeslbivtp2jisn4tc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andrew.doctorschatsystem",
+            "certificate_hash": "c794c7888ff54994efdde53e9ff0d00bf5ccae6c"
+          }
+        },
+        {
+          "client_id": "1067992705196-5b10lc71d8althu9ueg7qjc0e433uok3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALNDervDlVSeaUZIzYyMlLHl8k05zatVw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067992705196-5b10lc71d8althu9ueg7qjc0e433uok3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

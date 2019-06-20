@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/contactsItem_Chat"
+        android:title="Go to chat"/>
+
+    <item
+        android:id="@+id/contactsItem_Visit"
+        android:title="View profile" />
+
+    <item
+        android:id="@+id/contactsItem_remove"
+        android:title="Remove Contact" />
+
+</menu>

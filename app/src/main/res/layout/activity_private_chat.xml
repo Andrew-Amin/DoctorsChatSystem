@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg2"
+    tools:context=".PrivateChatActivity">
+
+    <include
+        android:id="@+id/privateChat_toolBar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/privateChat_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_RelativeLayout"
+        android:layout_below="@+id/privateChat_toolBar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/chat_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/privateChat_send_msg_btn"
+            android:background="@drawable/et_bg">
+
+            <EditText
+                android:id="@+id/privateChat_input_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/privateChat_input_file"
+                android:background="@drawable/et_bg"
+                android:hint="Type a message ..."
+                android:maxHeight="150dp"
+                android:minHeight="45dp"
+                android:textColorHighlight="#18F0FF"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/privateChat_input_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_add_a_photo_dp"
+                android:contentDescription="attach picture" />
+
+            <ImageButton
+                android:id="@+id/privateChat_input_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/privateChat_input_image"
+                android:background="@drawable/ic_attach_file_dp"
+                android:contentDescription="attach file" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/privateChat_send_msg_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn2_bg"
+            android:src="@drawable/ic_send_msg_dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

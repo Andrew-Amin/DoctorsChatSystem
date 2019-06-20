@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_bg"
+    tools:context=".SettingActivity">
+
+    <Button
+        android:id="@+id/set_btn_save"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="Save Changes"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/set_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/profile_image"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorAccent"/>
+
+    <ImageButton
+        android:id="@+id/setting_btn_changeImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn2_bg"
+        android:src="@drawable/ic_camera_dp"
+        android:layout_toEndOf="@+id/set_profile_image"
+        android:layout_below="@+id/set_profile_image"
+        android:layout_marginTop="-60dp"
+        android:layout_marginStart="-60dp" />
+
+    <EditText
+        android:id="@+id/set_et_userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:singleLine="true"
+        android:hint="user name ..."
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/et_bg"
+        android:paddingStart="15dp"
+        android:textColor="#444"
+        android:drawableStart="@drawable/ic_account_circle_dp"
+        android:layout_below="@+id/set_profile_image"
+        />
+
+    <EditText
+        android:id="@+id/set_et_status"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:singleLine="true"
+        android:hint="Speciality (Mandatory)"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/et_bg"
+        android:textColor="#444"
+        android:drawableStart="@drawable/ic_speciality"
+        android:layout_below="@+id/set_et_userName"
+        android:paddingStart="15dp"
+        />
+
+</RelativeLayout>
